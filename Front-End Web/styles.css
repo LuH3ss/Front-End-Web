@@ -16,7 +16,12 @@
 html {
     font-size: 62.5%;
     font-family: 'Comfortaa', cursive;
+    background-color:var(--fondo)
 }
+
+
+
+
 
 header {
     width: 100%;
@@ -43,9 +48,13 @@ main {
 
 
 .--presentacion-container{
-   
+   display: flex;
+   flex-flow: row wrap;
     position: relative;
     background-color:var(--seccion-x1);
+    align-items: center;
+    justify-content: center;
+    
 
 
   
@@ -59,19 +68,23 @@ main {
 }
 
 .--presentacion-img {
-    
+   
     width: 100%;
+    
     max-width: 320px;
-    height:300px;
+    height:auto;
     background-color:var(--seccion-x1);
     position: relative;
-    margin: 0 auto;
+    
+    
 }
 
 .--presentacion-img img {
-        width: 160px;
-        height: 200px;
-        margin: 40px 90px;
+    position: relative;
+    width: 67%;
+    max-width: 215px;
+    left: 15%;
+    
 }
             
 .marco1 {
@@ -97,9 +110,9 @@ main {
 
 .--presentacion-text{
         width: 100%;
-        height: 200px;
+        height: auto;
         background-color: var(--seccion-x1);
-        padding: 20px;
+        padding: 40px;
         position: relative;
 }
 
@@ -139,8 +152,8 @@ este el de HTML: <div>Icons made by <a href="https://www.freepik.com" title="Fre
 .--formacion-text {
     background-color: var(--seccion-x2);
     width: 100%;
-    height: 300px;
-    padding: 20px;
+    height: auto;
+    padding: 40px;
     position: relative;
 }
 
@@ -161,8 +174,8 @@ este el de HTML: <div>Icons made by <a href="https://www.freepik.com" title="Fre
 .--experiencia-text {
     background-color: var(--seccion-x1);
     width: 100%;
-    height: 320px;
-    padding: 20px;
+    height: auto;
+    padding: 40px;
     position: relative;
 }
 
@@ -182,15 +195,11 @@ footer {
         align-items: center;
     }
 
-    .contacto-container {
-        width: 100%;
-        min-width: 320;
-        text-align: center;
-       
-    }
+  
     .contacto-container--slider {
         display: flex;
         height: 200px;
+        justify-content: center;
         overflow-x: scroll;
         overscroll-behavior-x: contain;
         scroll-snap-type: proximity;
