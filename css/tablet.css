@@ -1,0 +1,9 @@
+section, footer  {
+    max-width: 768px;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
